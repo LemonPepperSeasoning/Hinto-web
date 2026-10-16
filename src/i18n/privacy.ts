@@ -1,20 +1,20 @@
 // The privacy policy, worded from how the app actually behaves (see website.md in the project notes).
 // If the app starts sending anything anywhere (for example the Claude card maker returns), update this first.
-export const privacyUpdated = '2026-10-15';
+export const privacyUpdated = '2026-10-16';
 export const contactEmail = 'lemonpepperstudioco@gmail.com';
 
 type Section = { heading: string; body: string[] };
 export const privacy: Record<'en' | 'ja', { title: string; intro: string; updated: string; sections: Section[] }> = {
   en: {
     title: 'Privacy policy',
-    updated: 'Last updated: 15 October 2026',
+    updated: 'Last updated: 16 October 2026',
     intro:
       'Oboeru is a flashcard app for iPhone made by Lemon Pepper Studio. In short: there is no account, no server and no tracking. Your cards and your study history stay on your iPhone.',
     sections: [
       {
         heading: 'What we collect',
         body: [
-          'Nothing. Oboeru has no account or sign-in, no analytics, no advertising and no tracking. We do not run a server that receives your data, and we do not sell or share data with anyone.',
+          'Nothing that identifies you. Oboeru has no account or sign-in, no analytics, no advertising and no tracking. We do not run a server that receives your data, and we do not sell or share data with anyone. The only exception is crash reports, described below.',
         ],
       },
       {
@@ -45,6 +45,13 @@ export const privacy: Record<'en' | 'ja', { title: string; intro: string; update
         ],
       },
       {
+        heading: 'Crash reports',
+        body: [
+          'If Oboeru crashes or freezes, iOS gives the app a report of what went wrong. Oboeru keeps these reports on your iPhone. They are sent to us only if you choose Settings → Support → Share debug info.',
+          'Separately, if you have turned on Share With App Developers in your iPhone’s Settings (Privacy & Security → Analytics & Improvements), Apple may share anonymous crash reports and usage statistics with us. Apple collects these under its own privacy policy, and they do not identify you. You can turn this off at any time in the same place.',
+        ],
+      },
+      {
         heading: 'Children',
         body: ['Oboeru collects no personal information from anyone, including children.'],
       },
@@ -62,14 +69,14 @@ export const privacy: Record<'en' | 'ja', { title: string; intro: string; update
   },
   ja: {
     title: 'プライバシーポリシー',
-    updated: '最終更新日：2026年10月15日',
+    updated: '最終更新日：2026年10月16日',
     intro:
       'Oboeruは、Lemon Pepper Studioが提供するiPhone用のフラッシュカードアプリです。かんたんに言うと、アカウントもサーバーもトラッキングもありません。カードと学習履歴は、あなたのiPhoneの中に保存されます。',
     sections: [
       {
         heading: '収集する情報',
         body: [
-          'ありません。Oboeruにはアカウントやログイン、アクセス解析、広告、トラッキングはありません。データを受け取るサーバーも運営しておらず、データを販売したり第三者と共有したりすることもありません。',
+          'あなたを特定できる情報は収集しません。Oboeruにはアカウントやログイン、アクセス解析、広告、トラッキングはありません。データを受け取るサーバーも運営しておらず、データを販売したり第三者と共有したりすることもありません。例外は、下に書いたクラッシュレポートだけです。',
         ],
       },
       {
@@ -97,6 +104,13 @@ export const privacy: Record<'en' | 'ja', { title: string; intro: string; update
         body: [
           'デッキファイル：デッキを共有すると、送るファイルにはカード、画像と音声、作成者としての表示名が含まれます。学習履歴は含まれません。',
           'デバッグ情報：設定 → サポート → デバッグ情報を共有 で、アプリのバージョン、iPhoneの機種、クラッシュレポート、最近のアプリのログをまとめたファイルを作り、共有シートを開きます。カードの内容やデッキ名は含まれません。あなたが送ったときだけ送信されます。',
+        ],
+      },
+      {
+        heading: 'クラッシュレポート',
+        body: [
+          'Oboeruが強制終了したり固まったりすると、iOSが何が起きたかのレポートをアプリに渡します。Oboeruはこのレポートを、あなたのiPhoneの中にだけ保存します。私たちに送られるのは、あなたが 設定 → サポート → デバッグ情報を共有 を選んだときだけです。',
+          'これとは別に、iPhoneの設定（プライバシーとセキュリティ → 解析および改善）で「Appデベロッパと共有」をオンにしている場合、Appleが匿名のクラッシュレポートや利用状況の統計を私たちに共有することがあります。これはAppleのプライバシーポリシーのもとでAppleが収集するもので、あなたを特定する情報は含まれません。同じ場所でいつでもオフにできます。',
         ],
       },
       {
