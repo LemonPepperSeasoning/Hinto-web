@@ -148,7 +148,7 @@ export const help: Record<'en' | 'ja', HelpTopic[]> = {
       "items": [
         {
           "q": "Where are my cards kept?",
-          "a": "On your iPhone. There's no account and no server. Your iPhone's iCloud backup includes them, so a restored phone brings them back, streak included."
+          "a": "On your iPhone. There's no account, and nothing is kept on a server. Your iPhone's iCloud backup includes them, so a restored phone brings them back, streak included."
         },
         {
           "q": "Does Oboeru send anything anywhere?",
@@ -304,7 +304,7 @@ export const help: Record<'en' | 'ja', HelpTopic[]> = {
       "items": [
         {
           "q": "カードはどこに保存されますか？",
-          "a": "あなたのiPhoneの中です。アカウントもサーバーもありません。iPhoneのiCloudバックアップに含まれるので、復元すれば連続記録も含めて元に戻ります。"
+          "a": "あなたのiPhoneの中です。アカウントはなく、サーバーにも保存されません。iPhoneのiCloudバックアップに含まれるので、復元すれば連続記録も含めて元に戻ります。"
         },
         {
           "q": "Oboeruはどこかにデータを送りますか？",

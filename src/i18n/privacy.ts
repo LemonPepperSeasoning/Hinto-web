@@ -1,15 +1,15 @@
 // The privacy policy, worded from how the app actually behaves (see website.md in the project notes).
 // If the app starts sending anything anywhere (for example the Claude card maker returns), update this first.
-export const privacyUpdated = '2026-10-16';
+export const privacyUpdated = '2026-10-21';
 export const contactEmail = 'lemonpepperstudioco@gmail.com';
 
 type Section = { heading: string; body: string[] };
 export const privacy: Record<'en' | 'ja', { title: string; intro: string; updated: string; sections: Section[] }> = {
   en: {
     title: 'Privacy policy',
-    updated: 'Last updated: 16 October 2026',
+    updated: 'Last updated: 21 October 2026',
     intro:
-      'Oboeru is a flashcard app for iPhone made by Lemon Pepper Studio. In short: there is no account, no server and no tracking. Your cards and your study history stay on your iPhone.',
+      'Oboeru is a flashcard app for iPhone made by Lemon Pepper Studio. In short: there is no account and no tracking, and no server receives your data. Your cards and your study history stay on your iPhone.',
     sections: [
       {
         heading: 'What we collect',
@@ -38,10 +38,18 @@ export const privacy: Record<'en' | 'ja', { title: string; intro: string; update
         ],
       },
       {
+        heading: 'Oboeru’s decks (Discover)',
+        body: [
+          'The Discover tab downloads the list of Oboeru’s decks, their cover pictures and the decks you get from a file host (Cloudflare R2). Only downloads happen: nothing about you or your study is uploaded, and the request carries no account or identifier.',
+          'Like any website, the host sees your iPhone’s IP address when it sends the files. We don’t use it to identify you, and we don’t combine it with anything else. Cloudflare handles it under its own privacy policy.',
+        ],
+      },
+      {
         heading: 'What leaves your iPhone, and only when you choose',
         body: [
           'Deck files: when you share a deck, the file you send contains the deck’s cards, its pictures and audio, and your display name as its creator. Your study history is never included.',
           'Debug info: Settings → Support → Share debug info builds a file with the app version, iPhone model, crash reports and recent app logs, and opens the share sheet. Card text and deck names are left out. It is sent only if you choose to send it.',
+          'Email: Settings → Support → Contact us opens an email to us with the app version, iOS version and iPhone model filled in. We receive what you send, and your email address, and use them only to reply.',
         ],
       },
       {
@@ -69,9 +77,9 @@ export const privacy: Record<'en' | 'ja', { title: string; intro: string; update
   },
   ja: {
     title: 'プライバシーポリシー',
-    updated: '最終更新日：2026年10月16日',
+    updated: '最終更新日：2026年10月21日',
     intro:
-      'Oboeruは、Lemon Pepper Studioが提供するiPhone用のフラッシュカードアプリです。かんたんに言うと、アカウントもサーバーもトラッキングもありません。カードと学習履歴は、あなたのiPhoneの中に保存されます。',
+      'Oboeruは、Lemon Pepper Studioが提供するiPhone用のフラッシュカードアプリです。かんたんに言うと、アカウントもトラッキングもなく、あなたのデータを受け取るサーバーもありません。カードと学習履歴は、あなたのiPhoneの中に保存されます。',
     sections: [
       {
         heading: '収集する情報',
@@ -100,10 +108,18 @@ export const privacy: Record<'en' | 'ja', { title: string; intro: string; update
         ],
       },
       {
+        heading: 'Oboeruのデッキ（見つける）',
+        body: [
+          '「見つける」タブでは、Oboeruのデッキの一覧、表紙の画像、入手したデッキをファイル配信サービス（Cloudflare R2）からダウンロードします。行うのはダウンロードだけで、あなたや学習についての情報は何もアップロードされず、リクエストにアカウントや識別子も含まれません。',
+          '一般的なウェブサイトと同じく、配信サービスはファイルを送るときにiPhoneのIPアドレスを受け取ります。私たちがそれであなたを特定したり、ほかの情報と組み合わせたりすることはありません。Cloudflareは自社のプライバシーポリシーのもとでこれを扱います。',
+        ],
+      },
+      {
         heading: 'iPhoneの外に出るもの（あなたが選んだときだけ）',
         body: [
           'デッキファイル：デッキを共有すると、送るファイルにはカード、画像と音声、作成者としての表示名が含まれます。学習履歴は含まれません。',
           'デバッグ情報：設定 → サポート → デバッグ情報を共有 で、アプリのバージョン、iPhoneの機種、クラッシュレポート、最近のアプリのログをまとめたファイルを作り、共有シートを開きます。カードの内容やデッキ名は含まれません。あなたが送ったときだけ送信されます。',
+          'メール：設定 → サポート → お問い合わせ で、アプリのバージョン、iOSのバージョン、iPhoneの機種を記入したメールが開きます。私たちが受け取るのは送られた内容とメールアドレスで、返信のためだけに使います。',
         ],
       },
       {
