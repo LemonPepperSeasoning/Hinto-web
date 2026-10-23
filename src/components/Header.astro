@@ -7,7 +7,7 @@ const other: Lang = lang === 'en' ? 'ja' : 'en';
 <header class="container top">
   <a class="brand" href={path(lang, '')}>
     <img src={`${import.meta.env.BASE_URL}app-icon.png`} alt="" width="28" height="28" />
-    <span>Oboeru</span>
+    <span>Hinto</span>
   </a>
   <a class="lang" href={path(other, page)} hreflang={t[other].htmlLang} lang={t[other].htmlLang}>{t[lang].switchLabel}</a>
 </header>

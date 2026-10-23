@@ -8,7 +8,7 @@ export const help: Record<'en' | 'ja', HelpTopic[]> = {
       "items": [
         {
           "q": "How do I make cards from a textbook or my notes?",
-          "a": "Create → Scan pages, or Import a file for a PDF, CSV or text file. Oboeru reads the page and makes cards: questions become question cards, word lists become vocabulary, and notes become key facts. Each scan makes a new deck."
+          "a": "Create → Scan pages, or Import a file for a PDF, CSV or text file. Hinto reads the page and makes cards: questions become question cards, word lists become vocabulary, and notes become key facts. Each scan makes a new deck."
         },
         {
           "q": "Can I type cards myself?",
@@ -20,7 +20,7 @@ export const help: Record<'en' | 'ja', HelpTopic[]> = {
         },
         {
           "q": "The deck name isn't right.",
-          "a": "Oboeru names a scan after the page's heading, or the source you type. Change it at the top of Review cards, or later in Deck settings."
+          "a": "Hinto names a scan after the page's heading, or the source you type. Change it at the top of Review cards, or later in Deck settings."
         }
       ]
     },
@@ -30,11 +30,11 @@ export const help: Record<'en' | 'ja', HelpTopic[]> = {
       "items": [
         {
           "q": "What is the Review cards screen?",
-          "a": "Every card Oboeru found, before it goes into a deck. Checked cards are added. Tap the circle on the left to leave a card out, and tap a card to edit it."
+          "a": "Every card Hinto found, before it goes into a deck. Checked cards are added. Tap the circle on the left to leave a card out, and tap a card to edit it."
         },
         {
           "q": "Some cards say Add answer.",
-          "a": "The page didn't print an answer, so Oboeru doesn't guess. Tap Add answer to type it. For a multiple-choice question, tap the right choice instead."
+          "a": "The page didn't print an answer, so Hinto doesn't guess. Tap Add answer to type it. For a multiple-choice question, tap the right choice instead."
         },
         {
           "q": "How do I see one page's cards?",
@@ -59,7 +59,7 @@ export const help: Record<'en' | 'ja', HelpTopic[]> = {
           "a": "Tap Undo (the curved arrow at the top). The card comes back so you can answer again."
         },
         {
-          "q": "How does Oboeru decide when a card comes back?",
+          "q": "How does Hinto decide when a card comes back?",
           "a": "It schedules each card with FSRS, a memory model: cards you know well come back after longer gaps, and forgotten ones sooner."
         }
       ]
@@ -134,11 +134,11 @@ export const help: Record<'en' | 'ja', HelpTopic[]> = {
       "items": [
         {
           "q": "What does the AI card maker do?",
-          "a": "It reads pages more like a person: it finds questions, choices, terms and key facts. Without it, Oboeru uses its own rules and the dictionary on your iPhone."
+          "a": "It reads pages more like a person: it finds questions, choices, terms and key facts. Without it, Hinto uses its own rules and the dictionary on your iPhone."
         },
         {
-          "q": "Which AI does Oboeru use?",
-          "a": "On an iPhone with Apple Intelligence, Oboeru uses Apple's model on the phone: free, and nothing leaves it. You can turn it off in Settings → AI card maker."
+          "q": "Which AI does Hinto use?",
+          "a": "On an iPhone with Apple Intelligence, Hinto uses Apple's model on the phone: free, and nothing leaves it. You can turn it off in Settings → AI card maker."
         }
       ]
     },
@@ -148,10 +148,10 @@ export const help: Record<'en' | 'ja', HelpTopic[]> = {
       "items": [
         {
           "q": "Where are my cards kept?",
-          "a": "On your iPhone. There's no account and no server. Your iPhone's iCloud backup includes them, so a restored phone brings them back, streak included."
+          "a": "On your iPhone. There's no account, and nothing is kept on a server. Your iPhone's iCloud backup includes them, so a restored phone brings them back, streak included."
         },
         {
-          "q": "Does Oboeru send anything anywhere?",
+          "q": "Does Hinto send anything anywhere?",
           "a": "Only what you choose: deck files you share, and debug info when you send it. Cards are made on your iPhone."
         }
       ]
@@ -164,7 +164,7 @@ export const help: Record<'en' | 'ja', HelpTopic[]> = {
       "items": [
         {
           "q": "教科書やノートからカードを作るには？",
-          "a": "作成 → ページをスキャン、またはPDF・CSV・テキストファイルなら「ファイルを読み込む」。Oboeruがページを読んでカードを作ります。問題は問題カードに、単語リストは単語カードに、ノートは要点カードになります。スキャンするたびに新しいデッキができます。"
+          "a": "作成 → ページをスキャン、またはPDF・CSV・テキストファイルなら「ファイルを読み込む」。Hintoがページを読んでカードを作ります。問題は問題カードに、単語リストは単語カードに、ノートは要点カードになります。スキャンするたびに新しいデッキができます。"
         },
         {
           "q": "自分でカードを入力できますか？",
@@ -186,11 +186,11 @@ export const help: Record<'en' | 'ja', HelpTopic[]> = {
       "items": [
         {
           "q": "「カードを確認」の画面とは？",
-          "a": "デッキに入れる前に、Oboeruが見つけたカードの一覧です。チェックの入ったカードが追加されます。左の丸をタップすると外せます。カードをタップすると編集できます。"
+          "a": "デッキに入れる前に、Hintoが見つけたカードの一覧です。チェックの入ったカードが追加されます。左の丸をタップすると外せます。カードをタップすると編集できます。"
         },
         {
           "q": "「答えを追加」と表示されるカードがあります。",
-          "a": "ページに答えが書かれていないので、Oboeruは推測しません。「答えを追加」をタップして入力してください。選択問題なら、正しい選択肢をタップするだけです。"
+          "a": "ページに答えが書かれていないので、Hintoは推測しません。「答えを追加」をタップして入力してください。選択問題なら、正しい選択肢をタップするだけです。"
         },
         {
           "q": "1ページ分のカードだけを見るには？",
@@ -290,10 +290,10 @@ export const help: Record<'en' | 'ja', HelpTopic[]> = {
       "items": [
         {
           "q": "AIカード作成では何ができますか？",
-          "a": "人が読むようにページを読み取り、問題・選択肢・用語・要点を見つけます。使わない場合は、Oboeru独自のルールとiPhone内の辞書でカードを作ります。"
+          "a": "人が読むようにページを読み取り、問題・選択肢・用語・要点を見つけます。使わない場合は、Hinto独自のルールとiPhone内の辞書でカードを作ります。"
         },
         {
-          "q": "OboeruはどのAIを使っていますか？",
+          "q": "HintoはどのAIを使っていますか？",
           "a": "Apple Intelligenceに対応したiPhoneでは、iPhone上のAppleのモデルを使います。無料で、データは外に出ません。設定 → AIカード作成でオフにできます。"
         }
       ]
@@ -304,10 +304,10 @@ export const help: Record<'en' | 'ja', HelpTopic[]> = {
       "items": [
         {
           "q": "カードはどこに保存されますか？",
-          "a": "あなたのiPhoneの中です。アカウントもサーバーもありません。iPhoneのiCloudバックアップに含まれるので、復元すれば連続記録も含めて元に戻ります。"
+          "a": "あなたのiPhoneの中です。アカウントはなく、サーバーにも保存されません。iPhoneのiCloudバックアップに含まれるので、復元すれば連続記録も含めて元に戻ります。"
         },
         {
-          "q": "Oboeruはどこかにデータを送りますか？",
+          "q": "Hintoはどこかにデータを送りますか？",
           "a": "あなたが選んだものだけです。共有したデッキファイルと、送ったときのデバッグ情報だけ。カードはiPhoneの中で作られます。"
         }
       ]

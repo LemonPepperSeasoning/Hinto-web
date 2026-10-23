@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lemonpepperseasoning.github.io/Oboeru-web/sitemap-index.xml
+Sitemap: https://lemonpepperseasoning.github.io/Hinto-web/sitemap-index.xml

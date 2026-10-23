@@ -1,7 +1,7 @@
 // One place for what changes at launch.
 export const site = {
-  name: 'Oboeru',
-  publisher: 'Lemon Pepper Studio',
+  name: 'Hinto',
+  publisher: 'Kabosu Lab',
   email: 'lemonpepperstudioco@gmail.com',
   /** 'soon' before launch (a plain text pill, never an imitation badge); 'preorder' or 'live' use Apple's badge. */
   install: 'soon' as 'soon' | 'preorder' | 'live',

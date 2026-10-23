@@ -2,15 +2,15 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
-// Static output only (no server): served by GitHub Pages at lemonpepperseasoning.github.io/Oboeru-web/.
+// Static output only (no server): served by GitHub Pages at lemonpepperseasoning.github.io/Hinto-web/.
 // With a custom domain later, set `site` to it and remove `base`.
 export default defineConfig({
   site: 'https://lemonpepperseasoning.github.io',
-  base: '/Oboeru-web',
+  base: '/Hinto-web',
   trailingSlash: 'always',
   output: 'static',
   i18n: {
-    // English at /oboeru/, Japanese at /oboeru/ja/.
+    // English at /hinto/, Japanese at /hinto/ja/.
     defaultLocale: 'en',
     locales: ['en', 'ja'],
     routing: { prefixDefaultLocale: false },
