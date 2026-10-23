@@ -9,7 +9,7 @@ import { join } from 'node:path';
 const chrome = process.env.CHROME ?? '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const root = new URL('..', import.meta.url).pathname;
 const kotaro = readFileSync(join(root, 'src/assets/buddies/kotaro.svg'), 'utf8');
-const tmp = mkdtempSync(join(tmpdir(), 'oboeru-img-'));
+const tmp = mkdtempSync(join(tmpdir(), 'hinto-img-'));
 
 function render(name, html, width, height, out) {
   const file = join(tmp, `${name}.html`);
@@ -38,7 +38,7 @@ const og = (title, sub, label, meaning) => `<!doctype html><html><head><meta cha
   .buddy{position:absolute;left:1000px;top:40px;width:170px;height:170px}
   .buddy .m-eyes-happy,.buddy .m-mouth-happy{display:inline}.buddy .m-eyes,.buddy .m-mouth,.buddy .m-mouth-sad,.buddy .m-eyes-sleep,.buddy .m-tear,.buddy .m-zz{display:none}
 </style></head><body>
-  <div class="brand">Oboeru</div><h1>${title}</h1><div class="sub">${sub}</div>
+  <div class="brand">Hinto</div><h1>${title}</h1><div class="sub">${sub}</div>
   <div class="stack"><div class="c c1"></div><div class="c c2"></div><div class="c face"><div class="lab">${label}</div>
     <div class="r">おぼえる</div><div class="t">覚える</div><div class="m">${meaning}</div></div></div>
   <div class="buddy">${kotaro}</div></body></html>`;

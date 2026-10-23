@@ -1,32 +1,32 @@
-# Oboeru website
+# Hinto website
 
-The website for Oboeru, the flashcard app: landing page, support (FAQ and contact) and privacy policy, in English and Japanese.
-Static [Astro](https://astro.build) (no server), served by GitHub Pages at https://lemonpepperseasoning.github.io/Oboeru-web/.
+The website for Hinto, the flashcard app: landing page, support (FAQ and contact) and privacy policy, in English and Japanese.
+Static [Astro](https://astro.build) (no server), served by GitHub Pages at https://lemonpepperseasoning.github.io/Hinto-web/.
 
 ```sh
 npm install
-npx astro dev --background   # http://localhost:4321/oboeru/
+npx astro dev --background   # http://localhost:4321/hinto/
 npm run build                # static files in dist/
 ```
 
-- `src/i18n/help.ts` is generated from the app's in-app Help: `python3 scripts/sync-help.py ../Oboeru`.
+- `src/i18n/help.ts` is generated from the app's in-app Help: `python3 scripts/sync-help.py ../Hinto`.
 - `src/i18n/privacy.ts` describes what the app does with data. Update it before releasing any app change that sends data anywhere.
 - Deploys on push to `main` (`.github/workflows/deploy.yml`).
 
 ## Going live (GitHub Pages)
 
 1. In this repo on GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions** (one time).
-2. Push to `main`. The workflow builds and deploys to **https://lemonpepperseasoning.github.io/Oboeru-web/**. Progress shows in the repo's Actions tab.
+2. Push to `main`. The workflow builds and deploys to **https://lemonpepperseasoning.github.io/Hinto-web/**. Progress shows in the repo's Actions tab.
 
 ### URLs for App Store Connect
 
 | Field | URL |
 |---|---|
-| Support URL (required) | https://lemonpepperseasoning.github.io/Oboeru-web/support/ |
-| Privacy Policy URL (required) | https://lemonpepperseasoning.github.io/Oboeru-web/privacy/ |
-| Marketing URL (optional) | https://lemonpepperseasoning.github.io/Oboeru-web/ |
+| Support URL (required) | https://lemonpepperseasoning.github.io/Hinto-web/support/ |
+| Privacy Policy URL (required) | https://lemonpepperseasoning.github.io/Hinto-web/privacy/ |
+| Marketing URL (optional) | https://lemonpepperseasoning.github.io/Hinto-web/ |
 
-Japanese versions: add `ja/` after `Oboeru-web/` (e.g. `…/Oboeru-web/ja/support/`).
+Japanese versions: add `ja/` after `Hinto-web/` (e.g. `…/Hinto-web/ja/support/`).
 Support contact: lemonpepperstudioco@gmail.com (in `src/config.ts`).
 
 ### On launch day
@@ -37,7 +37,7 @@ Support contact: lemonpepperstudioco@gmail.com (in `src/config.ts`).
 
 ### Keeping content in step with the app
 
-- FAQ: `python3 scripts/sync-help.py ../Oboeru` regenerates `src/i18n/help.ts` from the app's in-app Help (English and Japanese).
+- FAQ: `python3 scripts/sync-help.py ../Hinto` regenerates `src/i18n/help.ts` from the app's in-app Help (English and Japanese).
 - Screenshots (`src/assets/shots/<lang>-<screen>-<light|dark>.png`):
   - Capture from the app's demo mode on the 6.9" simulator: `-demo -noTips -screen <review|study|choices-run|reveal|waiting|end|library>`.
   - Status bar at 9:41.

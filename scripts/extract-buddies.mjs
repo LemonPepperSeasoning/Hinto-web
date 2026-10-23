@@ -6,7 +6,7 @@ import vm from 'node:vm';
 const src = readFileSync(process.argv[2], 'utf8');
 const sandbox = { window: {}, document: { querySelectorAll: () => [] } };
 vm.runInNewContext(src, sandbox);
-const { CHARS } = sandbox.window.OboeruChars;
+const { CHARS } = sandbox.window.HintoChars;
 const map = { kotaro: 'shiba', pochi: 'pochi', kai: 'kawauso' };
 for (const [name, key] of Object.entries(map)) {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><g class="m-all">${CHARS[key].body()}</g></svg>\n`;

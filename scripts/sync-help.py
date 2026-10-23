@@ -3,12 +3,12 @@
 (tools/l10n/ja.py), so the website's FAQ says exactly what the app says. Uses the branches for
 AICardMaker.claudeAvailable == false (the Claude card maker is switched off).
 
-Usage: python3 scripts/sync-help.py [path to the Oboeru app repo, default ../Oboeru]
+Usage: python3 scripts/sync-help.py [path to the Hinto app repo, default ../Hinto]
 """
 import json, os, re, sys
 
-app = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(__file__), "..", "..", "Oboeru")
-src = open(os.path.join(app, "Oboeru/Features/Settings/HelpView.swift"), encoding="utf-8").read()
+app = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(__file__), "..", "..", "Hinto")
+src = open(os.path.join(app, "Hinto/Features/Settings/HelpView.swift"), encoding="utf-8").read()
 sys.path.insert(0, os.path.join(app, "tools/l10n"))
 import ja  # noqa: E402
 

@@ -15,7 +15,7 @@ const jsonLd = {
   mainEntity: topics.flatMap((tp) => tp.items.map((i) => ({ '@type': 'Question', name: i.q, acceptedAnswer: { '@type': 'Answer', text: i.a } }))),
 };
 ---
-<Base lang={lang} page="support/" title={`${s.supportTitle} · Oboeru`} description={s.supportDescription} jsonLd={jsonLd}>
+<Base lang={lang} page="support/" title={`${s.supportTitle} · Hinto`} description={s.supportDescription} jsonLd={jsonLd}>
   <article class="container reading">
     <h1>{s.supportTitle}</h1>
     <p class="lead">{s.supportLead}</p>
