@@ -9,7 +9,7 @@ npx astro dev --background   # http://localhost:4321/hinto/
 npm run build                # static files in dist/
 ```
 
-- `src/i18n/help.ts` is generated from the app's in-app Help: `python3 scripts/sync-help.py ../Hinto`.
+- `src/i18n/help.ts` is generated from the app's in-app Help: `python3 scripts/sync-help.py ../Hinto-ios`.
 - `src/i18n/privacy.ts` describes what the app does with data. Update it before releasing any app change that sends data anywhere.
 - Deploys on push to `main` (`.github/workflows/deploy.yml`).
 
@@ -37,7 +37,7 @@ Support contact: lemonpepperstudioco@gmail.com (in `src/config.ts`).
 
 ### Keeping content in step with the app
 
-- FAQ: `python3 scripts/sync-help.py ../Hinto` regenerates `src/i18n/help.ts` from the app's in-app Help (English and Japanese).
+- FAQ: `python3 scripts/sync-help.py ../Hinto-ios` regenerates `src/i18n/help.ts` from the app's in-app Help (English and Japanese).
 - Screenshots (`src/assets/shots/<lang>-<screen>-<light|dark>.png`):
   - Capture from the app's demo mode on the 6.9" simulator: `-demo -noTips -screen <review|study|choices-run|reveal|waiting|end|library>`.
   - Status bar at 9:41.
